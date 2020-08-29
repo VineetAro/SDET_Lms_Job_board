@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	<test name="Test">
+		<parameter name="lmsUsername" value="root" />
+		<parameter name="lmsPassword" value="pa$$w0rd" />
+		<parameter name="urlLMS" value="https://alchemy.hguy.co/lms/" />
+
+		<parameter name="jobsUsername" value="root" />
+		<parameter name="jobsPassword" value="pa$$w0rd" />
+		<parameter name="urlJOBS" value="https://alchemy.hguy.co/jobs/" />
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="test.LMSProject" />
+			<class name = "test.JobBoardProject"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
